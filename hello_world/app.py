@@ -31,8 +31,9 @@ def lambda_handler(event, context):
     #     # Send some context about this error to Lambda Logs
     #     print(e)
 
-    #     raise e
-
+    if True:
+        raise Exception("This will cause a deployment rollback")
+        
     return {
         "statusCode": 200,
         "body": json.dumps({
