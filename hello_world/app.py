@@ -30,6 +30,7 @@ def lambda_handler(event, context):
     # except requests.RequestException as e:
     #     # Send some context about this error to Lambda Logs
     #     print(e)
+    print("Change deployed with SAM Accelerate");
 
     return {
         "statusCode": 200,
